@@ -2,39 +2,43 @@
 export async function main(ns) {
     //var serverList = ns.scan("home")
     var serverList = [
+        'aevum-police',
+        'alpha-ent',
         'avmnite-02h',
         'catalyst',
-        'computek',
-        'crush-fitness',
         'CSEC',
         'foodnstuff',
+        'global-pharm',
         'harakiri-sushi',
         'hong-fang-tea',
         'I.I.I.I',
         'iron-gym',
         'joesguns',
-        'johnson-ortho',
+        'lexo-corp',
         'max-hardware',
+        'millenium-fitness',
+        'n00dles',
         'nectar-net',
         'neo-net',
         'netlink',
-        'n00dles',
         'omega-net',
+        'omnia',
         'phantasy',
+        'rho-construction',
         'rothman-uni',
         'sigma-cosmetics',
         'silver-helix',
+        'solaris',
         'summit-uni',
-        'syscore',
         'the-hub',
+        'unitalife',
+        'univ-energy',
         'zb-institute',
         'zer0'
     ]
 
-    const cyan = "\u001b[36m";
-    const green = "\u001b[32m";
     const red = "\u001b[31m";
-    const reset = "\u001b[0m";
+    const cyan = "\u001b[36m";
 
     var target = 'n00dles';
     if (ns.args.length > 0) {
@@ -103,7 +107,7 @@ export async function main(ns) {
                 ns.scp(script, server);
                 ns.exec(script, server, threads, target);
             } else {
-                ns.tprint(red + server + 'Server doesnt have enough ram to hack from, skipping');
+                ns.tprint(red + server + ' server doesnt have enough ram to hack from, skipping');
             }
         }
     }
